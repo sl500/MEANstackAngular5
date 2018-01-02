@@ -12,8 +12,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { BookDetailComponent } from './book-detail/book-detail.component';
 import { BookCreateComponent } from './book-create/book-create.component';
 import { BookEditComponent } from './book-edit/book-edit.component';
+import { FactComponent } from './fact/fact.component';
 
 const appRoutes: Routes = [
+  {
+    path: 'facts',
+    component: FactComponent,
+    data: { title: 'Fact List' }
+  },
   {
     path: 'books',
     component: BookComponent,
@@ -35,7 +41,7 @@ const appRoutes: Routes = [
     data: { title: 'Edit Book' }
   },
   { path: '',
-    redirectTo: '/books',
+    redirectTo: '/',
     pathMatch: 'full'
   }
 ];
@@ -46,7 +52,8 @@ const appRoutes: Routes = [
     BookComponent,
     BookDetailComponent,
     BookCreateComponent,
-    BookEditComponent
+    BookEditComponent,
+    FactComponent
   ],
   imports: [
     BrowserModule,
