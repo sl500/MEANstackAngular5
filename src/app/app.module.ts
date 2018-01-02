@@ -13,12 +13,18 @@ import { BookDetailComponent } from './book-detail/book-detail.component';
 import { BookCreateComponent } from './book-create/book-create.component';
 import { BookEditComponent } from './book-edit/book-edit.component';
 import { FactComponent } from './fact/fact.component';
+import { FactCreateComponent } from './fact-create/fact-create.component';
 
 const appRoutes: Routes = [
   {
     path: 'facts',
     component: FactComponent,
     data: { title: 'Fact List' }
+  },
+  {
+    path: 'fact-create',
+    component: FactCreateComponent,
+    data: { title: 'Create Fact' }
   },
   {
     path: 'books',
@@ -53,7 +59,8 @@ const appRoutes: Routes = [
     BookDetailComponent,
     BookCreateComponent,
     BookEditComponent,
-    FactComponent
+    FactComponent,
+    FactCreateComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,24 @@
+<div class="container">
+  <h1>Add New Fact</h1>
+  <div class="row">
+    <div class="col-md-6">
+      <form (ngSubmit)="saveFact()" #factForm="ngForm">        
+        <div class="form-group">
+          <label for="name">Front</label>
+          <input type="text" class="form-control" [(ngModel)]="fact.frontside" name="front" required>
+        </div>
+        <div class="form-group">
+          <label for="name">Back</label>
+          <input type="text" class="form-control" [(ngModel)]="fact.backside" name="back" required>
+        </div>        
+        <div class="form-group">
+          <label for="name">Creator</label>
+          <input type="text" class="form-control" [(ngModel)]="fact.creator" name="creator" required>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-success" [disabled]="!factForm.form.valid">Save</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
