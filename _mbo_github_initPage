@@ -1,0 +1,56 @@
+Quick setup — if you’ve done this kind of thing before
+	
+ HTTPS
+https://github.com/sl500/MEANstackAngular5.git
+or
+ SSH
+git@github.com:sl500/MEANstackAngular5.git
+
+
+
+We recommend every repository include a README, LICENSE, and .gitignore.
+…or create a new repository on the command line
+
+echo "# lindesapp" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin hhttps://github.com/sl500/MEANstackAngular5.git
+or
+git remote add origin git@github.com:sl500/MEANstackAngular5.git
+git push -u origin master
+…or push an existing repository from the command line
+
+git remote add origin https://github.com/sl500/MEANstackAngular5.git
+git push -u origin master
+…or import code from another repository
+You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
+
+Import code
+ ProTip! Use the URL for this page when adding GitHub as a remote.
+
+Erstellen von repo
+1. mkdir irgendeinfoldernamehier
+2. cd derfoldernamehier
+3. git clone https://github.com/sl500/MEANstackAngular5.git
+4. cd lindesapp
+5. npm install
+6. ng serve
+
+lokale version zum uploaden/pushen
+1. git status
+2. git add *
+3. git status
+4. git commit -m "message"
+
+
+Remote zum uploaden/push vorbereiten
+git remote -v
+git remote add lindesapp https://github.com/sl500/MEANstackAngular5.git
+git remote -v
+
+lokale version zum remote uploaden/push 
+git push -u lindesapp master
+
+
+
