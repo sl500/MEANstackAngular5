@@ -23,7 +23,7 @@ app.use(express.static(path.join(__dirname, 'dist')));
 app.use('/books', express.static(path.join(__dirname, 'dist')));
 app.use('/book', book);
 app.use('/facts', express.static(path.join(__dirname, 'dist')));
-app.use('/fact', book);
+app.use('/fact', fact);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

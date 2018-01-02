@@ -9,3 +9,11 @@ var FactSchema = new mongoose.Schema({
   });
 
   module.exports = mongoose.model('Fact', FactSchema);
+
+  /*
+
+
+  ,      
+    updated_date: { type: Date, default: Date.now },
+    created_date: { type: Date, default: Date.now },
+    */
