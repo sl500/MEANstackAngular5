@@ -5,6 +5,7 @@ var logger = require('morgan');
 var bodyParser = require('body-parser');
 
 var book = require('./routes/book');
+var fact = require('./routes/fact');
 var app = express();
 
 // Schritt 3 Mongoose
@@ -21,6 +22,8 @@ app.use(bodyParser.urlencoded({'extended':'false'}));
 app.use(express.static(path.join(__dirname, 'dist')));
 app.use('/books', express.static(path.join(__dirname, 'dist')));
 app.use('/book', book);
+app.use('/facts', express.static(path.join(__dirname, 'dist')));
+app.use('/fact', book);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
