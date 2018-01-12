@@ -14,6 +14,7 @@ import { BookCreateComponent } from './book-create/book-create.component';
 import { BookEditComponent } from './book-edit/book-edit.component';
 import { FactComponent } from './fact/fact.component';
 import { FactCreateComponent } from './fact-create/fact-create.component';
+import { FactDetailComponent } from './fact-detail/fact-detail.component';
 
 const appRoutes: Routes = [
   {
@@ -60,7 +61,8 @@ const appRoutes: Routes = [
     BookCreateComponent,
     BookEditComponent,
     FactComponent,
-    FactCreateComponent
+    FactCreateComponent,
+    FactDetailComponent
   ],
   imports: [
     BrowserModule,
