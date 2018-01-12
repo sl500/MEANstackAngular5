@@ -19,19 +19,14 @@ import { FactEditComponent } from './fact-edit/fact-edit.component';
 
 const appRoutes: Routes = [
   {
-    path: 'facts',
-    component: FactComponent,
-    data: { title: 'Fact List' }
-  },
-  {
-    path: 'fact-create',
-    component: FactCreateComponent,
-    data: { title: 'Create Fact' }
-  },
-  {
     path: 'books',
     component: BookComponent,
     data: { title: 'Book List' }
+  },
+  {
+    path: 'facts',
+    component: FactComponent,
+    data: { title: 'Fact List' }
   },
   {
     path: 'book-details/:id',
@@ -39,14 +34,29 @@ const appRoutes: Routes = [
     data: { title: 'Book Details' }
   },
   {
+    path: 'fact-details/:id',
+    component: FactDetailComponent,
+    data: { title: 'Fact Details' }
+  },
+  {
     path: 'book-create',
     component: BookCreateComponent,
     data: { title: 'Create Book' }
   },
   {
+    path: 'fact-create',
+    component: FactCreateComponent,
+    data: { title: 'Create Fact' }
+  },
+  {
     path: 'book-edit/:id',
     component: BookEditComponent,
     data: { title: 'Edit Book' }
+  },
+  {
+    path: 'fact-edit/:id',
+    component: FactEditComponent,
+    data: { title: 'Edit Fact' }
   },
   { path: '',
     redirectTo: '/',
