@@ -4,7 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var bodyParser = require('body-parser');
 
-var book = require('./routes/book');
+var book = require('./routes/book');book
 var fact = require('./routes/fact');
 var app = express();
 
@@ -12,7 +12,8 @@ var app = express();
 var mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
 mongoose.connect('mongodb://localhost/mean-angular5', { useMongoClient: true, promiseLibrary: require('bluebird') })
-  .then(() =>  console.log('connection succesful, with mongod'))
+  .then(() =>  console.log('connection succesful, with mongod'))  
+  .then(() =>  console.log('http://localhost:3000/ or http://localhost:3000/facts or http://localhost:3000/books'))
   .catch((err) => console.error(err));
 // Schritt 3 Mongoose ende
 

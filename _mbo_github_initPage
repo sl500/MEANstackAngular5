@@ -53,4 +53,8 @@ lokale version zum remote uploaden/push
 git push -u lindesapp master
 
 
+ZUSTAND 2018 01 12
+Books -> Create -> details -> Update Funktion geht nicht!
+Books -> details geht nicht
+
 
