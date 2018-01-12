@@ -4,7 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var bodyParser = require('body-parser');
 
-var book = require('./routes/book');book
+var book = require('./routes/book');
 var fact = require('./routes/fact');
 var app = express();
 
